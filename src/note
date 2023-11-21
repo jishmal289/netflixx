@@ -1,0 +1,25 @@
+axios Instance
+-------------------------
+
+-its an independence object that align
+
+usefecthock
+
+first one (<fuction>,<depenpency>)
+
+dependency
+to control sideeffect/usefect
+
+1)no depenpency : useefect runs on every render
+useEffect(() => {
+  //Runs on every render
+});
+2)empty array as dependency :useefect call happens in the first render
+useEffect(() => {
+  //Runs only on the first render
+}, []);
+3)props or states : useEffect call happens in the first Render sa well as every time the value of the props or state change
+useEffect(() => {
+  //Runs on the first render
+  //And any time any dependency value changes
+}, [prop, state]);
